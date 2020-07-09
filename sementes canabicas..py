@@ -1,5 +1,5 @@
 """
-sementes de canabis podem ser modificadas geneticamente aqui nos podemos
+sementes de plantas podem ser modificadas geneticamente aqui nos podemos
 verificar quantas sementes você tera no fim do processo.
 """
 cont = 0
