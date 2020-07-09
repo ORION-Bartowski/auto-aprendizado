@@ -1,0 +1,30 @@
+!SESSION 2020-07-09 02:37:49.441 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_171
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data @noDefault
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2020-07-09 02:40:25.911
+!MESSAGE Loading 'file:/home/orion/.p2/org.eclipse.equinox.p2.core/cache/' failed. retry=1
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2020-07-09 02:40:25.921
+!MESSAGE Loading 'file:/home/orion/.p2/org.eclipse.equinox.p2.core/cache/' failed. retry=2
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2020-07-09 02:40:25.928
+!MESSAGE Loading 'file:/home/orion/.p2/org.eclipse.equinox.p2.core/cache/' failed. retry=1
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2020-07-09 02:40:25.929
+!MESSAGE Loading 'file:/home/orion/.p2/org.eclipse.equinox.p2.core/cache/' failed. retry=2
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2020-07-09 02:40:25.953
+!MESSAGE Loading 'file:/home/orion/.p2/pool/' failed. retry=1
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2020-07-09 02:40:25.956
+!MESSAGE Loading 'file:/home/orion/.p2/pool/' failed. retry=2
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2020-07-09 02:40:25.963
+!MESSAGE Loading 'file:/home/orion/.p2/pool/' failed. retry=1
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2020-07-09 02:40:25.963
+!MESSAGE Loading 'file:/home/orion/.p2/pool/' failed. retry=2
