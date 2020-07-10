@@ -4,4 +4,8 @@
 		<item key="dialogWidth" value="700"/>
 		<item key="dialogHeight" value="700"/>
 	</section>
+	<section name="org.eclipse.oomph.setup.ui.UnsignedContentDialog">
+		<item key="dialogWidth" value="600"/>
+		<item key="dialogHeight" value="400"/>
+	</section>
 </section>
