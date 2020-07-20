@@ -160,9 +160,9 @@ java/lang/StringLatin1
 java/nio/charset/Charset
 sun/nio/cs/StandardCharsets
 java/nio/charset/spi/CharsetProvider
+jdk/internal/misc/VM
 java/lang/ThreadLocal
 java/util/concurrent/atomic/AtomicInteger
-jdk/internal/misc/VM
 java/util/Arrays
 java/lang/Math
 sun/nio/cs/StandardCharsets$Aliases
