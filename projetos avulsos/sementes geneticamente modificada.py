@@ -1,7 +1,3 @@
-"""
-sementes de plantas podem ser modificadas geneticamente aqui nos podemos
-verificar quantas sementes você tera no fim do processo.
-"""
 cont = 0
 while cont == False:
     Sementes = int(input("quantas sementes você tem disponivel:\n"))
