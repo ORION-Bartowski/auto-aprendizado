@@ -1,7 +1,7 @@
 import airsimneurips
 import threading
 import time
-
+#teste de drone airsim-Cliebte
 class ReproduceResetRaceCondition():
     def __init__(self, drone_name = "drone_1"):
         self.airsim_client = airsimneurips.MultirotorClient()
