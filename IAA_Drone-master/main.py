@@ -4,10 +4,6 @@ from image import *
 from numpy import *
 from projetM1 import *
 
-# Auteurs: Sarah BOUKRIS et Ismael CUSSAC
-# Option IAA Master 1 - 2014-2015
-
-#Concatene les images de l'echantillon d'apprentissage (mer et autre)
 def assemble(mer, autre):
 
 	merTarget = ones(len(mer))
@@ -28,7 +24,7 @@ def predit(data, target, im, kernel, h):
 	T = zeros(len(im))
 	for i in range(len(im)):
 		T[i] = predictKernelPerceptron(alpha, data, target, im[i], kernel, h)
-	print "Classes predites: \n", T
+	print "Classes predites: \n"
 
 
 def trouveHyperParam(data, target):

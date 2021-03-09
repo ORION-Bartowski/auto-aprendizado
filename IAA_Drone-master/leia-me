@@ -1,0 +1,6 @@
+felip conserta a paradoxo de rotação da  maquina e a rederização da outros escripts
+from noyau import *
+from perceptron import *
+from image import *
+from numpy import *
+from projetM1 import *
