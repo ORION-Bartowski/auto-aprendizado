@@ -8,7 +8,7 @@ from projetM1 import *
 
 
 
-
+ aplicar void para uma melhor aplicação do sistema operacional, ritra as imagens nn necessarias. 
 typedef int (*splay_tree_foreach_fn) (splay_tree_node, void*);
 
 /* The type of a function used to allocate memory for tree root and
@@ -26,7 +26,7 @@ typedef void (*splay_tree_deallocate_fn) (void *, void *);
 /* The nodes in the splay tree.  */
 struct splay_tree_node_s {
   /* The key.  */
-  splay_tree_key key;
+  splay_tree_key key; <<< result
 
   /* The value.  */
   splay_tree_value value;
@@ -38,11 +38,11 @@ struct splay_tree_node_s {
 
 /* The splay tree itself.  */
 struct splay_tree_s {
-  /* The root of the tree.  */
-  splay_tree_node root;
-
-  /* The comparision function.  */
-  splay_tree_compare_fn comp;
+  /* The root of the tree.  */ <------- mudar o root					obs: o root nn é necessario pois não
+  splay_tree_node root;									ha necessecidade de uma segurança indvidual
+											para cada procedimento pois o sistema é involuntario
+  /* The comparision function.  */							e não a necessidade de segurança então colocar o root
+  splay_tree_compare_fn comp;								somente no sistema primario. ***IMPORTANTE***
 
   /* The deallocate-key function.  NULL if no cleanup is necessary.  */
   splay_tree_delete_key_fn delete_key;
@@ -60,7 +60,7 @@ struct splay_tree_s {
   void *allocate_data;
 };
 
-typedef struct splay_tree_s *splay_tree;
+typedef struct splay_tree_s *splay_tree; <-----
 
 extern splay_tree splay_tree_new (splay_tree_compare_fn,
 				  splay_tree_delete_key_fn,
@@ -78,16 +78,16 @@ extern splay_tree splay_tree_new_typed_alloc (splay_tree_compare_fn,
 					      splay_tree_allocate_fn,
 					      splay_tree_deallocate_fn,
 					      void *);
-extern void splay_tree_delete (splay_tree);
-extern splay_tree_node splay_tree_insert (splay_tree,
-					  splay_tree_key,
-					  splay_tree_value);
-extern void splay_tree_remove	(splay_tree, splay_tree_key);
-extern splay_tree_node splay_tree_lookup (splay_tree, splay_tree_key);
+extern void splay_tree_delete (splay_tree); <-----
+extern splay_tree_node splay_tree_insert (splay_tree,						obs:esse comando é necessario
+					  splay_tree_key,					para o desenvolvimento artificial
+					  splay_tree_value);					da maquina por favor nn retira 
+extern void splay_tree_remove	(splay_tree, splay_tree_key);					marcado com 01 os 03 nn são necessario
+extern splay_tree_node splay_tree_lookup (splay_tree, splay_tree_key);              		o push foi atualizado...
 extern splay_tree_node splay_tree_predecessor (splay_tree, splay_tree_key);
 extern splay_tree_node splay_tree_successor (splay_tree, splay_tree_key);
 extern splay_tree_node splay_tree_max (splay_tree);
 extern splay_tree_node splay_tree_min (splay_tree);
-extern int splay_tree_foreach (splay_tree, splay_tree_foreach_fn, void*);
-extern int splay_tree_compare_ints (splay_tree_key, splay_tree_key);
-extern int splay_tree_compare_pointers (splay_tree_key,	splay_tree_key);
+extern int splay_tree_foreach (splay_tree, splay_tree_foreach_fn, void*); < ---- 01
+extern int splay_tree_compare_ints (splay_tree_key, splay_tree_key); <--- 01
+extern int splay_tree_compare_pointers (splay_tree_key,	splay_tree_key); <----- 3
