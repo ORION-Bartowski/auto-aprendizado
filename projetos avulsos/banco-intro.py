@@ -4,6 +4,3 @@ for c in range(0,3):
     test += 1
     print(f'test{test}')
 
-"""
-                                        esta em espera de espiração.
-"""
